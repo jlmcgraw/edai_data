@@ -66,7 +66,7 @@ mkdir -p $tempdir
 unzip -j -u "*.zip" -d $tempdir
 
 #delete any existing database
-rm --force $outputdir/eadi.sqlite
+rm --force "$outputdir/$dbfile"
 
 # Lump the data into spatialite database
 echo "---------- Convert EADI shapefile data into spatialite database"
